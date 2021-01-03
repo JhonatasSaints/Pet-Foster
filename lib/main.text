@@ -1,0 +1,146 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+
+  // Este widget é a raiz do seu aplicativo.
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',-
+      theme: ThemeData(
+
+       // Este é o tema do seu aplicativo.
+         //
+         // Tente executar seu aplicativo com "flutter run". Você verá o
+         // o aplicativo possui uma barra de ferramentas azul. Então, sem sair do aplicativo, tente
+         // alterando o primarySwatch abaixo para Colors.green e então invoque
+         // "hot reload" (pressione "r" no console onde você executou "flutter run",
+         // ou simplesmente salve suas alterações em "hot reload" em um Flutter IDE).
+         // Observe que o contador não voltou a zero; a aplicação
+         // não é reiniciado.
+
+        primarySwatch: Colors.blue,
+
+         // Isso faz com que a densidade visual se adapte à plataforma que você executa
+         // o aplicativo está ativado. Para plataformas de desktop, os controles serão menores e
+         // mais próximos (mais densos) do que em plataformas móveis.
+
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );//MaterialApp
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+   // Este widget é a página inicial do seu aplicativo. É stateful, o que significa
+   // que tem um objeto State (definido abaixo) que contém campos que afetam
+   // como fica.
+   
+// Esta classe é a configuração do estado. Ele contém os valores (neste
+   // case o título) fornecido pelo pai (neste caso, o widget do aplicativo) e
+   // usado pelo método de construção do Estado. Os campos em uma subclasse de widget são
+   // sempre marcado como "final".
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      // Esta chamada para setState diz à estrutura Flutter que algo
+       // alterado neste estado, o que faz com que ele execute novamente o método de construção abaixo
+       // para que a exibição possa refletir os valores atualizados. Se mudássemos
+       // _counter sem chamar setState (), então o método de construção não seria
+       // chamado novamente e, portanto, nada parece acontecer.
+       _counter ++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+
+   // Este método é executado novamente sempre que setState é chamado, por exemplo, como feito
+     // pelo método _incrementCounter acima.
+     //
+     // A estrutura Flutter foi otimizada para tornar a execução de métodos de compilação
+     // rápido, para que você possa reconstruir qualquer coisa que precise de atualização em vez
+     // do que ter que alterar individualmente as instâncias dos widgets.
+
+    return Scaffold(
+      appBar: AppBar(
+
+        // Aqui pegamos o valor do objeto MyHomePage que foi criado por
+         // o método App.build e use-o para definir o título da barra de aplicativos.
+
+        title: Text(widget.title),
+      ),
+      body: Center(
+
+       // Center é um widget de layout. Ele pega um único filho e o posiciona
+        // no meio do pai.
+
+     child: Column(
+
+          // A coluna também é um widget de layout. Leva uma lista de filhos e
+          // os organiza verticalmente. Por padrão, ele se ajusta para caber em seu
+          // filhos horizontalmente, e tenta ser tão alto quanto seu pai.
+          //
+          // Invoque "depuração de pintura" (pressione "p" no console, escolha o
+          // Ação "Toggle Debug Paint" do Flutter Inspector no Android
+          // Studio ou o comando "Toggle Debug Paint" no Visual Studio Code)
+          // para ver o wireframe para cada widget.
+          //
+          // A coluna tem várias propriedades para controlar como ela se dimensiona e
+          // como ele posiciona seus filhos. Aqui, usamos mainAxisAlignment para
+          // centrar os filhos verticalmente; o eixo principal aqui é o vertical
+          // eixo porque as colunas são verticais (o eixo cruzado seria
+          // horizontal).
+
+            mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'You have pushed the button this many times:',
+            ),
+            
+            //texto
+            
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headline4,
+            ), // texto -> text
+          ], //<widget>[]
+        ), //coluna -> columm
+      ), //centro -> center
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ),
+      // Esta vírgula final torna a formatação automática mais agradável para métodos de construção.
+      // floatingActionbutton
+    );//andaime -> Scaffold
+  }
+}
+
+
+
+
+Mais sobre o texto originalÉ necessário fornecer o texto original para ver mais informações sobre a tradução
+Enviar feedback
+Painéis laterais
+Histórico
+Salvas
+Contribuir
