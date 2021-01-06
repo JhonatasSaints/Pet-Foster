@@ -9,7 +9,10 @@ void main() => runApp(MyApp());
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Pet Foster',
-      theme: ThemeData(primarySwatch: Colors.lightBlue,),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.lightBlue,
+      ),
       home: LoginPage(),
     );
   }

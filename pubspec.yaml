@@ -74,3 +74,19 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+assets:
+  - assets/logo.png
+  - assets/user-picture.png
+  - assets/reset-password-icon.png
+  - assets/profile-picture.png
+  - assets/app-logo.png
+  - assets/fb-icon.png
+  - assets/bone.png
+  - assets/
+  - assets/
+  - assets/
+  - assets/
+  - assets/
+  - assets/
+  - assets/

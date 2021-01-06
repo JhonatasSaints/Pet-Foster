@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
 class LoginPage extends StatefulWidget {
-  @override
+@override
   _LoginPageState createState() => _LoginPageState();
 }
 
@@ -9,46 +8,93 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
-      body:Padding(
-        padding: EdgeInsets.all(10),
-        child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children:<Widget>[
-              TextFormField(
-                autofocus: true,
-                keyboardType: TextInputType.number,
-                style: new TextStyle(color: Colors.white, fontSize: 20),
-                decoration: InputDecoration(
-                  labelText: "CPF",
-                  labelStyle: TextStyle(color: Colors.white)),
-              ),
-              Divider(),
-              TextFormField(
-                autofocus: true,
-                obscureText: true,
-                keyboardType: TextInputType.text,
-                style: new TextStyle(color: Colors.white, fontSize: 20),
-                decoration: InputDecoration(
-                  labelText: "Senha",
-                  labelStyle: TextStyle(color: Colors.white)),
-              ),
-              Divider(),
-              ButtonTheme(
-                height: 60.0,
-                child: RaisedButton(
-                  onPressed:()=>{},
-                  child: Text(
-                    "Enviar",
-                    style: TextStyle(color: Colors.lightBlue),
-                  ),
-                  color: Colors.white,
+      body: Container(
+        padding: EdgeInsets.only(
+          top: 60,
+          left: 40,
+          right: 40,
+        ),
+        color: Colors.white,
+        child: ListView(
+          children: <Widget>[
+            SizedBox(
+              width: 128,
+              height: 128,
+              child: Image.asset("assets/logo.png"),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            TextFormField(
+              //autofocus: true,
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: "E-mail",
+                labelStyle: TextStyle(
+                  color: Colors.black38,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 20,
                 ),
               ),
-            ],
-          ),
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            TextFormField(
+              // autofocus: true,
+              keyboardType: TextInputType.text,
+              obscureText: true,
+              decoration: InputDecoration(
+                labelText: "Senha", //Password
+                labelStyle: TextStyle(
+                  color: Colors.black38,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 20,
+                ),
+              ),
+              style: TextStyle(
+                fontSize: 20
+                ),
+            ),
+            Container(
+              height: 40,
+              alignment: Alignment.centerRight,
+              child: FlatButton(
+                child: Text(
+                  "Recuperar Senha",//recover password
+                ),
+                onPressed: (){
+                
+
+                },
+              ),
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            Container(
+              height: 60,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight
+                  stops: [0.3, 1],
+                  colors: [
+                    Color(0xFF64B5F6),
+                    Color(0xFFE3F2FD),
+                  ],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular (5),
+                ),
+              ),
+
+            ),
+          ],
         ),
       ),
     );
