@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 class LoginPage extends StatefulWidget {
 @override
-  _LoginPageState createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginPage> {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
@@ -20,10 +15,11 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               width: 128,
               height: 128,
-              child: Image.asset("assets/logo.png"),
+              child: Image.asset("assets/logo.png"
+              ),
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             TextFormField(
               //autofocus: true,
@@ -64,10 +60,9 @@ class _LoginPageState extends State<LoginPage> {
               alignment: Alignment.centerRight,
               child: FlatButton(
                 child: Text(
-                  "Recuperar Senha",//recover password
+                  "Esqueceu a senha?",//recover password
                 ),
                 onPressed: (){
-                
 
                 },
               ),
@@ -81,18 +76,17 @@ class _LoginPageState extends State<LoginPage> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
-                  end: Alignment.bottomRight
+                  end: Alignment.bottomRight,
                   stops: [0.3, 1],
                   colors: [
-                    Color(0xFF64B5F6),
                     Color(0xFFE3F2FD),
+                    Color(0xFF64B5F6),
                   ],
                 ),
                 borderRadius: BorderRadius.all(
                   Radius.circular (5),
                 ),
               ),
-
             ),
           ],
         ),
