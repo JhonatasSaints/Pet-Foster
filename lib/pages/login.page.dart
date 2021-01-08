@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-class LoginPage extends StatefulWidget {
+class LoginPage extends StatelessWidget {
 @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +15,7 @@ class LoginPage extends StatefulWidget {
             SizedBox(
               width: 128,
               height: 128,
-              child: Image.asset("assets/logo.png"
+              child: Image.asset(" assets/pet-house.png"
               ),
             ),
             SizedBox(
@@ -85,6 +85,33 @@ class LoginPage extends StatefulWidget {
                 ),
                 borderRadius: BorderRadius.all(
                   Radius.circular (5),
+                ),
+              ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text(
+                      "Login",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue,
+                        fontSize: 20,
+                    ),
+                    textAlign: TextAlign.left,
+                    ),
+                    Container(
+                      child: SizedBox(
+                      child: Image.asset("assets/pawprints.png"
+                      ),
+                      height: 28,
+                      width: 28,
+                      ),
+                    ),
+                  ],
+                ),
+                onPressed: () => {},
                 ),
               ),
             ),
