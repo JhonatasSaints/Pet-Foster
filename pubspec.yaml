@@ -76,17 +76,19 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
 assets:
-  - assets/logo.png
-  - assets/user-picture.png
-  - assets/reset-password-icon.png
-  - assets/profile-picture.png
-  - assets/app-logo.png
-  - assets/fb-icon.png
+  - assets/PetFoster-logo.png
+  - assets/fb.png
   - assets/bone.png
-  - assets/Adopt a pet-pana.png
+  - assets/paw.png
+  - assets/pawblue.png
+  - assets/pawprints.png
+  - assets/add-user.png
+  - assets/key.png
   - assets/pet-house.png
-  - assets/
-  - assets/
-  - assets/
-  - assets/
-  - assets/
+  - assets/pet-store-shop.png
+  - assets/home-circle.png
+  - assets/user-picture.png
+  - assets/reset-password.png
+  - assets/profile-picture.png
+  - assets/Adopt a pet-pana.png
+  - assets/Animal shelter-rafiki.png

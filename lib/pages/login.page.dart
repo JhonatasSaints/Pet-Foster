@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               width: 128,
               height: 128,
-              child: Image.asset(" assets/pet-house.png"
+              child: Image.asset(" assets/PetFoster-logo.png"
               ),
             ),
             SizedBox(
