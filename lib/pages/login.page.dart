@@ -101,8 +101,8 @@ class LoginPage extends StatelessWidget {
                     ),
                     Container(
                       child: SizedBox(
-                      child: Image.asset("assets/pawprints.png"
-                      ),
+                      child: Image.asset("assets/pawprints.png"),
+                      
                       height: 28,
                       width: 28,
                       ),
@@ -150,6 +150,19 @@ class LoginPage extends StatelessWidget {
                   ),
                   onPressed: () {},
                 ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 40,
+              child: FlatButton(
+                child: Text(
+                  "Cadastre-se",//Register/sing up 
+                  textAlign: TextAlign.center,
+                ),
+                onPressed: () => {},//anonymous function 
               ),
             ),
           ],
