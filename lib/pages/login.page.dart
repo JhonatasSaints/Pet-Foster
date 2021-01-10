@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class LoginPage extends StatelessWidget {
 @override
   Widget build(BuildContext context) {
@@ -15,11 +16,10 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               width: 128,
               height: 128,
-              child: Image.asset(" assets/PetFoster-logo.png"
-              ),
+              child: Image.asset("assets/PetFoster-logo.png"),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             TextFormField(
               //autofocus: true,
@@ -33,7 +33,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 20
               ),
             ),
             SizedBox(
@@ -62,7 +62,7 @@ class LoginPage extends StatelessWidget {
                 child: Text(
                   "Esqueceu a senha?",//recover password
                 ),
-                onPressed: (){},
+                onPressed: () {},
               ),
             ),
             SizedBox(
@@ -82,7 +82,7 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
                 borderRadius: BorderRadius.all(
-                  Radius.circular (5),
+                  Radius.circular(5),
                 ),
               ),
               child: SizedBox.expand(
