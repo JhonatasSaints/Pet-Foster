@@ -1,3 +1,4 @@
+import 'package:pet_foster/pages/reset-password.page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -60,9 +61,17 @@ class LoginPage extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: FlatButton(
                 child: Text(
-                  "Esqueceu a senha?",//recover password
+                  "Esqueceu a senha?",
+                  textAlign: TextAlign.right,//recover password
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(
+                      builder: (context) => ResetPasswordPage(),
+                    ),
+                  );
+                },
               ),
             ),
             SizedBox(
