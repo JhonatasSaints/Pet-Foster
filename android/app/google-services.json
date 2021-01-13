@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "894316808086",
+    "project_id": "pet-foster-app",
+    "storage_bucket": "pet-foster-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894316808086:android:4660764512b639dfc17fb7",
+        "android_client_info": {
+          "package_name": "com.Pet_Foster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894316808086-s0aqs74sod3qreh33dsn9oofiggipd4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKHjm-mJP6FW7SQVcYYx17LGes7ea8e5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894316808086-s0aqs74sod3qreh33dsn9oofiggipd4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
