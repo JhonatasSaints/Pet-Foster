@@ -13,24 +13,46 @@ class ResetPasswordPage extends StatelessWidget {
         ),
       ),
       body: Container(
+        decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  stops: [0.3, 1],
+                  colors: [
+                    Color(0xFFE3F2FD),
+                    Color(0xFF64B5F6),
+                  ],
+                ),
+              ),
         padding: EdgeInsets.only(
           top: 60, left: 40, right: 40,
         ),
-        color: Colors.lightBlue[700],
         child: ListView(
           children: <Widget>[
             SizedBox(
-              width: 200, height: 200, 
+              width: 200, height: 100, 
               child: Image.asset("assets/key.png"),
             ),
             SizedBox(
-              height: 20,
+              height: 0.8,
             ),
             Text("Esqueceu sua Senha?",
               style: TextStyle(
                 fontSize: 32,
-                fontWeight: FontWeight.w700, color: Colors.white, 
+                fontWeight: FontWeight.w600, color: Colors.lightBlue, 
               ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+                "Informe seu e-mail cadastrado, enviaremos um link para você recadastrar sua senha.   Não recebeu nosso e-mail? Entre em Contato.",
+              style: TextStyle(
+                fontSize:17,
+                fontWeight: FontWeight.w500,
+                ),
+                textAlign: TextAlign.center,
             ),
             SizedBox(
               height: 10,
