@@ -57,6 +57,16 @@ class ResetPasswordPage extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
+            TextFormField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: "E-mail",
+                labelStyle: TextStyle(
+                  fontSize: 20, fontWeight: FontWeight.w600, color:Colors.white, ),
+              ),
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(height: 20,),
           ],
         ),
       ),
