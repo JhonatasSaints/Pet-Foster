@@ -18,7 +18,21 @@ class SignupPage extends StatelessWidget {
                   fit: BoxFit.fitHeight,
                 ),
               ),
-              
+              child: Container(
+                height:56, width:56,
+                alignment: Alignment.center,
+                decoration:Boxdecoration(
+                  gradien: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    stops: [0.2, 1.0],
+                    colors: [
+                      Color(0x99FFFFFF),
+                      Color(0XFFFFFFFF),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ],
         ),

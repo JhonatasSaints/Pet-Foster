@@ -1,4 +1,5 @@
 import 'package:pet_foster/pages/reset-password.page.dart';
+import 'package:pet_foster/pages/signup.page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
