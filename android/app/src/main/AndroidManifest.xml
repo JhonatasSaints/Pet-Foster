@@ -7,10 +7,11 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="pet_foster"
+        android:label="Pet Foster"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
+            
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
