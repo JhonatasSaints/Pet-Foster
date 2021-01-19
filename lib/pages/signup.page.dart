@@ -21,8 +21,8 @@ class SignupPage extends StatelessWidget {
               child: Container(
                 height:56, width:56,
                 alignment: Alignment.center,
-                decoration:Boxdecoration(
-                  gradien: LinearGradient(
+                decoration:BoxDecoration(
+                  gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     stops: [0.2, 1.0],
@@ -30,6 +30,22 @@ class SignupPage extends StatelessWidget {
                       Color(0x99FFFFFF),
                       Color(0XFFFFFFFF),
                     ],
+                  ),
+                  border: Border.all(
+                    width: 4.0,
+                    color: const Color(0XFFFFFFFF),
+                  ),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(56),
+                  ),
+                ),
+                child: SizedBox.expand(
+                  child: FlatButton(
+                    child: Icon(
+                      Icons.add,
+                      color: Colors.lightBlue,
+                    ),
+                    onPressed: () {},
                   ),
                 ),
               ),
