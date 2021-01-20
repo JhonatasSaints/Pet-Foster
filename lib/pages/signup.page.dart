@@ -50,6 +50,60 @@ class SignupPage extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(
+              height:20,
+            ),
+            TextFormField( //autofocus: true,
+              keyboardType: TextInputType.text,
+              decoration: InputDecoration(
+                labelText: "Nome", //name user
+                labelStyle: TextStyle(
+                  color: Colors.black38,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 20,
+                ),
+              ),
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            TextFormField( //autofocus: true,
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: "E-mail", //email user
+                labelStyle: TextStyle(
+                  color: Colors.black38,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 20,
+                ),
+              ),
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            TextFormField( //autofocus: true,
+              keyboardType: TextInputType.text,
+              decoration: InputDecoration(
+                labelText: "Senha", //passord user
+                labelStyle: TextStyle(
+                  color: Colors.black38,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 20,
+                ),
+              ),
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
           ],
         ),
       ),
