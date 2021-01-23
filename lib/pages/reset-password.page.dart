@@ -5,25 +5,17 @@ class ResetPasswordPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.lightBlue[350],
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          color: Colors.lightBlue[700],
+          color: Colors.white,
           onPressed: () => Navigator.pop(context, false),
         ),
       ),
       body: Container(
         decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  stops: [0.3, 1],
-                  colors: [
-                    Color(0xFFE3F2FD),
-                    Color(0xFF64B5F6),
-                  ],
-                ),
-              ),
+          color: Colors.white38,
+        ),
         padding: EdgeInsets.only(
           top: 60, left: 40, right: 40,
         ),
@@ -31,10 +23,10 @@ class ResetPasswordPage extends StatelessWidget {
           children: <Widget>[
             SizedBox(
               width: 200, height: 100, 
-              child: Image.asset("assets/key.png"),
+              child: Image.asset("assets/key.png",),
             ),
             SizedBox(
-              height: 0.8,
+              height: 0.08,
             ),
             Text("Esqueceu sua Senha?",
               style: TextStyle(
@@ -62,9 +54,9 @@ class ResetPasswordPage extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: "E-mail",
                 labelStyle: TextStyle(
-                  fontSize: 20, fontWeight: FontWeight.w600, color:Colors.white, ),
+                  fontSize: 20, fontWeight: FontWeight.w600, color:Colors.black38,),
               ),
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20,),
             ),
             SizedBox(height: 20,),
             Container(
@@ -74,7 +66,7 @@ class ResetPasswordPage extends StatelessWidget {
                 gradient: LinearGradient(
                   begin: Alignment.topRight,
                   end:Alignment.bottomLeft,
-                  stops:[0.3, 1],
+                  stops:[0.4, 1],
                   colors:[
                     Color(0xFF64B5F6),
                     Color(0xFFE3F2FD),
