@@ -3,10 +3,15 @@ import 'package:pet_foster/pages/login.page.dart';
 // import 'package:pet_foster/pages/signup.page.dart';
 // import 'package:pet_foster/pages/user.list.dart'; //erro
 import 'package:flutter/material.dart';
-// import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  awai Firebase.initialize();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
