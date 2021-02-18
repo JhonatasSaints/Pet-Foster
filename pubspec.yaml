@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -24,8 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   firebase_core: "0.7.0"
-  firebase_auth: ^0.20.0+1
-
+  firebase_auth: "^0.20.0+1"
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -41,7 +40,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -79,19 +77,19 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   assets:
-      - assets/PetFoster-logo.png
-      - assets/fb.png
-      - assets/bone.png
-      - assets/paw.png
-      - assets/pawblue.png
-      - assets/pawprints.png
-      - assets/add-user.png
-      - assets/key.png
-      - assets/pet-house.png
-      - assets/pet-store-shop.png
-      - assets/home-circle.png
-      - assets/user-picture.png
-      - assets/reset-password.png
-      - assets/profile-picture.png
-      - assets/Adopt a pet-pana.png
-      - assets/Animal shelter-rafiki.png
+    - assets/PetFoster-logo.png
+    - assets/fb.png
+    - assets/bone.png
+    - assets/paw.png
+    - assets/pawblue.png
+    - assets/pawprints.png
+    - assets/add-user.png
+    - assets/key.png
+    - assets/pet-house.png
+    - assets/pet-store-shop.png
+    - assets/home-circle.png
+    - assets/user-picture.png
+    - assets/reset-password.png
+    - assets/profile-picture.png
+    - assets/Adopt a pet-pana.png
+    - assets/Animal shelter-rafiki.png
