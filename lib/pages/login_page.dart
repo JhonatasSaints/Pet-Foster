@@ -1,9 +1,9 @@
-import 'package:pet_foster/pages/reset_password.page.dart';
+import 'package:pet_foster/pages/reset_password_page.dart';
 import 'package:pet_foster/pages/signup_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-@override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
@@ -34,9 +34,7 @@ class LoginPage extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              style: TextStyle(
-                fontSize: 20
-              ),
+              style: TextStyle(fontSize: 20),
             ),
             SizedBox(
               height: 10,
@@ -53,9 +51,7 @@ class LoginPage extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              style: TextStyle(
-                fontSize: 20
-                ),
+              style: TextStyle(fontSize: 20),
             ),
             Container(
               height: 40,
@@ -63,11 +59,11 @@ class LoginPage extends StatelessWidget {
               child: FlatButton(
                 child: Text(
                   "Esqueceu a senha?",
-                  textAlign: TextAlign.right,//recover password
+                  textAlign: TextAlign.right, //recover password
                 ),
                 onPressed: () {
                   Navigator.push(
-                    context, 
+                    context,
                     MaterialPageRoute(
                       builder: (context) => ResetPasswordPage(),
                     ),
@@ -99,27 +95,26 @@ class LoginPage extends StatelessWidget {
                 child: FlatButton(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Text(
-                      "Login",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blue,
-                        fontSize: 20,
-                    ),
-                    textAlign: TextAlign.left,
-                    ),
-                    Container(
-                      child: SizedBox(
-                      child: Image.asset("assets/pawprints.png"),
-                      
-                      height: 28,
-                      width: 28,
+                    children: <Widget>[
+                      Text(
+                        "Login",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.left,
                       ),
-                    ),
-                  ],
-                ),
-                onPressed: () => {},
+                      Container(
+                        child: SizedBox(
+                          child: Image.asset("assets/pawprints.png"),
+                          height: 28,
+                          width: 28,
+                        ),
+                      ),
+                    ],
+                  ),
+                  onPressed: () => {},
                 ),
               ),
             ),
@@ -141,7 +136,7 @@ class LoginPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text(
-                        "Login com Facebook",//login with facebook
+                        "Login com Facebook", //login with facebook
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -169,10 +164,10 @@ class LoginPage extends StatelessWidget {
               height: 40,
               child: FlatButton(
                 child: Text(
-                  "Cadastre-se",//Register/sing up 
+                  "Cadastre-se", //Register/sing up
                   textAlign: TextAlign.center,
                 ),
-                onPressed: () => {},//anonymous function 
+                onPressed: () => {}, //anonymous function
               ),
             ),
           ],
