@@ -1,5 +1,6 @@
 import 'package:pet_foster/pages/reset_password_page.dart';
 import 'package:pet_foster/pages/signup_page.dart';
+// import 'package:pet_foster/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -167,7 +168,14 @@ class LoginPage extends StatelessWidget {
                   "Cadastre-se", //Register/sing up
                   textAlign: TextAlign.center,
                 ),
-                onPressed: () => {}, //anonymous function
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SignupPage(),
+                    ),
+                  );
+                }, //anonymous function
               ),
             ),
           ],

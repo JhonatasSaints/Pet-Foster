@@ -86,10 +86,11 @@ flutter:
     - assets/add-user.png
     - assets/key.png
     - assets/pet-house.png
+    - assets/pet-pana.png
+    - assets/pet-amigo.png
     - assets/pet-store-shop.png
     - assets/home-circle.png
     - assets/user-picture.png
     - assets/reset-password.png
     - assets/profile-picture.png
-    - assets/Adopt a pet-pana.png
-    - assets/Animal shelter-rafiki.png
+    - assets/Animal.png
