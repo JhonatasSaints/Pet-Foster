@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SignupPage extends StatelessWidget {
+class Signup_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,6 +19,13 @@ class SignupPage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Container(
+              // child: Text(
+              //   'Pet Foster',
+              //   style: TextStyle(
+              //       height: 1,
+              //       fontSize: 26,
+              //       color: Colors.black54.withOpacity(0.5)),
+              // ),
               width: 100,
               height: 150,
               alignment: Alignment(0.0, 1.15),
@@ -74,6 +81,10 @@ class SignupPage extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                   fontSize: 20,
                 ),
+                border: new OutlineInputBorder(
+                  borderRadius: new BorderRadius.circular(15.0),
+                  borderSide: new BorderSide(color: Colors.blueGrey),
+                ),
               ),
               style: TextStyle(
                 fontSize: 20,
@@ -90,6 +101,10 @@ class SignupPage extends StatelessWidget {
                   color: Colors.black38,
                   fontWeight: FontWeight.w400,
                   fontSize: 20,
+                ),
+                border: new OutlineInputBorder(
+                  borderRadius: new BorderRadius.circular(15.0),
+                  borderSide: new BorderSide(color: Colors.blueGrey),
                 ),
               ),
               style: TextStyle(
@@ -108,6 +123,10 @@ class SignupPage extends StatelessWidget {
                   fontWeight: FontWeight.w400,
                   fontSize: 20,
                 ),
+                border: new OutlineInputBorder(
+                  borderRadius: new BorderRadius.circular(15.0),
+                  borderSide: new BorderSide(color: Colors.blueGrey),
+                ),
               ),
               style: TextStyle(
                 fontSize: 20,
@@ -123,15 +142,15 @@ class SignupPage extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                  stops: [0.4, 1],
+                  end: Alignment.bottomRight,
+                  stops: [0.5, 10],
                   colors: [
                     Color(0xFF64B5F6),
                     Color(0xFFE3F2FD),
                   ],
                 ),
                 borderRadius: BorderRadius.all(
-                  Radius.circular(5),
+                  Radius.circular(15.0),
                 ),
               ),
               child: SizedBox.expand(
@@ -140,7 +159,7 @@ class SignupPage extends StatelessWidget {
                   child: Text(
                     "Cadastrar",
                     style: TextStyle(
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w800,
                       color: Colors.white,
                       fontSize: 20,
                     ),

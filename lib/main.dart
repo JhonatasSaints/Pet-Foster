@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.lightBlue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginPage(), //LoginPage TelaInicial
+      home: Login_Page(), //Login_Page/TelaInicial
     );
   }
 }
