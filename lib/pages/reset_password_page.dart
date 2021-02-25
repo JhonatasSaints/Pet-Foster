@@ -91,7 +91,7 @@ class Reset_Password_Page extends StatelessWidget {
                   ],
                 ),
                 borderRadius: BorderRadius.all(
-                  Radius.circular(5),
+                  Radius.circular(15.0),
                 ),
               ),
               child: SizedBox.expand(
