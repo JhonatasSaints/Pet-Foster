@@ -1,5 +1,6 @@
 import 'package:pet_foster/pages/login_page.dart';
 import 'package:pet_foster/pages/signup_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class TelaInicial extends StatefulWidget {
@@ -21,12 +22,12 @@ class _TelaInicialState extends State<TelaInicial> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   SizedBox(
-                    height: 40,
+                    height: 5,
                   ),
                   _buildTitle(), //title | titulo
-                  SizedBox(
-                    height: 10,
-                  ),
+                  // SizedBox(
+                  //   height: 5,
+                  // ),
                   _buildLogo(), //logo
                   SizedBox(
                     height: 20,
@@ -45,25 +46,31 @@ class _TelaInicialState extends State<TelaInicial> {
     );
   }
 
-//Title PetFoster / Titulo
+//Title PetFoster /  texto e/ou Titulo "imagem logo"
   Widget _buildTitle() {
     return Container(
+      width: 128,
+      height: 128,
       alignment: Alignment.center, // colocar imagem no lugar
-      child: Text(
-        'Pet Foster',
-        style: TextStyle(
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-          color: Colors.blue,
-        ),
-      ),
+      child: Image.asset("assets/PetFoster-logo.png"),
     );
+    // return Container(
+    //   alignment: Alignment.center, // colocar imagem no lugar
+    //   child: Text(
+    //     'Pet Foster',
+    //     style: TextStyle(
+    //       fontSize: 30,
+    //       fontWeight: FontWeight.bold,
+    //       color: Colors.blue,
+    //     ),
+    //   ),
+    // );
   }
 
 //logo | Marca
   Widget _buildLogo() {
     return Container(
-      height: 300,
+      height: 250,
       decoration: BoxDecoration(
         shape: BoxShape.rectangle,
         image: DecorationImage(
@@ -77,7 +84,7 @@ class _TelaInicialState extends State<TelaInicial> {
 //Description of app / descricao do app "basica"
   Widget _buildDesc() {
     return Text(
-      'Adote um Pet!Seja feliz Fazendo o bem ao Adotar e Amar um PetFoster.',
+      'Adote um Pet!  Seja feliz, Fazendo o bem ao Adotar e Amar um PetFoster.',
     );
   }
 

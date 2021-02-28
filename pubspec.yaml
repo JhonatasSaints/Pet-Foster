@@ -79,7 +79,6 @@ flutter:
   assets:
     - assets/PetFoster-logo.png
     - assets/fb.png
-    - assets/bone.png
     - assets/paw.png
     - assets/pawblue.png
     - assets/pawprints.png
@@ -88,9 +87,4 @@ flutter:
     - assets/pet-house.png
     - assets/pet-pana.png
     - assets/pet-amigo.png
-    - assets/pet-store-shop.png
-    - assets/home-circle.png
-    - assets/user-picture.png
-    - assets/reset-password.png
-    - assets/profile-picture.png
     - assets/Animal.png

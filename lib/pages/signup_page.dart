@@ -6,10 +6,11 @@ class Signup_Page extends StatelessWidget {
     return Scaffold(
       //button pop
       appBar: AppBar(
-        backgroundColor: Colors.lightBlue[350],
+        title: Text('Cadastrar'),
+        backgroundColor: Colors.white,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          color: Colors.white,
+          color: Colors.blue,
           onPressed: () => Navigator.pop(context, false),
         ),
       ),
@@ -22,9 +23,10 @@ class Signup_Page extends StatelessWidget {
               // child: Text(
               //   'Pet Foster',
               //   style: TextStyle(
-              //       height: 1,
-              //       fontSize: 26,
-              //       color: Colors.black54.withOpacity(0.5)),
+              //     height: 1, // alinhamento fazer ainda
+              //     fontSize: 25,
+              //     color: Colors.black54.withOpacity(0.5),
+              //   ),
               // ),
               width: 100,
               height: 150,
@@ -133,7 +135,7 @@ class Signup_Page extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 20,
             ),
             Container(
               //buttons registre and cancel
@@ -165,13 +167,15 @@ class Signup_Page extends StatelessWidget {
                     ),
                     textAlign: TextAlign.center,
                   ),
+                  // button cadastrar
                   onPressed: () {},
                 ),
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
+            ////////// ao apertar o nome cancelar voltar pra tela inicial
             Container(
               height: 40,
               alignment: Alignment.center,

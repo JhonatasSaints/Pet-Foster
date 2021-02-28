@@ -5,10 +5,11 @@ class Reset_Password_Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightBlue[350],
+        title: Text('Recuperar Senha'),
+        backgroundColor: Colors.white,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          color: Colors.white,
+          color: Colors.blue,
           onPressed: () => Navigator.pop(context, false),
         ),
       ),

@@ -1,15 +1,32 @@
 import 'package:pet_foster/pages/reset_password_page.dart';
 import 'package:pet_foster/pages/signup_page.dart';
-import 'package:pet_foster/pages/home_page.dart';
+// import 'package:pet_foster/pages/home_page.dart';
+import 'package:pet_foster/pages/inicio_screen.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class Login_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Tela inicial'),
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          color: Colors.blue,
+          onPressed: () {
+            //Navegar da tela login p/
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => TelaInicial()),
+            );
+          },
+        ),
+      ),
       body: Container(
         padding: EdgeInsets.only(
-          top: 60,
+          top: 40,
           left: 40,
           right: 40,
         ),
@@ -19,10 +36,24 @@ class Login_Page extends StatelessWidget {
             SizedBox(
               width: 128,
               height: 128,
-              child: Image.asset("assets/PetFoster-logo.png"),
+              child: Image.asset("assets/pet-house.png"),
+            ),
+            Container(
+              alignment: Alignment.center, // colocar imagem no lugar
+              child: Text(
+                'Pet Foster',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                  // shadows: [
+                  //   shadow(color: Colors.blue, offset: Offset(2, 2)), //deixar com sombras
+                  // ],
+                ),
+              ),
             ),
             SizedBox(
-              height: 20,
+              height: 40,
             ),
             TextFormField(
               //autofocus: true,
@@ -41,6 +72,7 @@ class Login_Page extends StatelessWidget {
               ),
               style: TextStyle(fontSize: 20),
             ),
+
             SizedBox(
               height: 10,
             ),
@@ -65,6 +97,7 @@ class Login_Page extends StatelessWidget {
             SizedBox(
               height: 35,
             ),
+            // button login onpressed
             Container(
               height: 60,
               alignment: Alignment.centerLeft,
@@ -105,13 +138,21 @@ class Login_Page extends StatelessWidget {
                       ),
                     ],
                   ),
-                  onPressed: () => {},
+                  //definir pagina
+                  onPressed: () => {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => (),
+                    //   ),
+                    // ),
+                  },
                 ),
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
+            //button login with facebook | espacamento e botao facebook
+            // SizedBox(
+            //   height: 10,
+            // ),
             // Container(
             //   height: 60,
             //   alignment: Alignment.centerLeft,
@@ -148,15 +189,16 @@ class Login_Page extends StatelessWidget {
             // ),
             // ),
             // ),
+            // recover password | espacamneto e etxto recuperar senha
             SizedBox(
               height: 20,
             ),
             Container(
-              height: 50,
+              height: 30,
               child: FlatButton(
                 child: Text(
                   "Esqueceu a senha?",
-                  textAlign: TextAlign.center, //recover password
+                  textAlign: TextAlign.center,
                 ),
                 onPressed: () {
                   Navigator.push(
@@ -168,11 +210,12 @@ class Login_Page extends StatelessWidget {
                 },
               ),
             ),
+            //sing up | Register
             Container(
               height: 40,
               child: FlatButton(
                 child: Text(
-                  "Cadastre-se", //Register/sing up
+                  "Cadastre-se",
                   textAlign: TextAlign.center,
                 ),
                 onPressed: () {
