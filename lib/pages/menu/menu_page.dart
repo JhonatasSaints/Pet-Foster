@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:pet_foster/pages/menu/listapet.dart';
-import 'package:pet_foster/pages/menu/telacadastro.dart';
+import 'package:pet_foster/pages/menu/adopition _list_page.dart';
+import 'package:pet_foster/pages/menu/already_registered_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/material.dart';
 
 class menu extends StatefulWidget {
   @override
@@ -13,54 +13,48 @@ class menuState extends State<menu> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("PET FOSTER"),
-      ),
+          // title: Text("Menu"),
+          ),
       backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
           SizedBox(
             height: 30,
           ),
-          Padding(
-            padding: EdgeInsets.only(left: 16, right: 16),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "MENU",
-                      style: GoogleFonts.openSans(
-                          textStyle: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold)),
-                    ),
-                    SizedBox(
-                      height: 4,
-                    ),
-                  ],
-                ),
-                IconButton(
-                  alignment: Alignment.topCenter,
-                  icon: Image.asset(
-                    "assets/download.png",
-                    width: 70,
-                  ),
-                  onPressed: () {},
-                )
-              ],
+          Container(
+            alignment: Alignment.center, // texto
+            child: Text(
+              'MENU',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.w800,
+                color: Colors.blue,
+                shadows: [
+                  Shadow(
+                    color: Colors.black38,
+                    offset: Offset(3, 4),
+                    blurRadius: 4,
+                  ), //deixar com sombras
+                ],
+                letterSpacing: 10, //espacamento de letras
+                // wordSpacing: 10, // espacamento longo entre frases
+              ),
             ),
           ),
           SizedBox(
-            height: 40,
+            width: 300,
+            height: 250,
+            child: Image.asset("assets/pet-amigo.png"),
+          ),
+          SizedBox(
+            height: 15,
           ),
           Column(
             children: <Widget>[
               Container(
                 //buttons registre and cancel
-                height: 60,
+                height: 40,
+                width: 300,
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
@@ -80,7 +74,7 @@ class menuState extends State<menu> {
                   child: FlatButton(
                     //button registre
                     child: Text(
-                      "Cadastrar pet",
+                      "Pets Cadastrados",
                       style: TextStyle(
                         fontWeight: FontWeight.w800,
                         color: Colors.white,
@@ -90,8 +84,12 @@ class menuState extends State<menu> {
                     ),
                     // button cadastrar
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => pagina3()));
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => pagina3(), //
+                        ),
+                      );
                     },
                   ),
                 ),
@@ -99,7 +97,8 @@ class menuState extends State<menu> {
               Container(
                 margin: EdgeInsets.only(top: 20),
                 //buttons registre and cancel
-                height: 60,
+                height: 40,
+                width: 300,
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
@@ -119,7 +118,7 @@ class menuState extends State<menu> {
                   child: FlatButton(
                     //button registre
                     child: Text(
-                      "lista de adoção",
+                      "Lista para Adoção",
                       style: TextStyle(
                         fontWeight: FontWeight.w800,
                         color: Colors.white,
@@ -135,42 +134,43 @@ class menuState extends State<menu> {
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.only(top: 20),
-                //buttons registre and cancel
-                height: 60,
-                alignment: Alignment.centerLeft,
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topRight,
-                    end: Alignment.bottomRight,
-                    stops: [0.5, 10],
-                    colors: [
-                      Color(0xFF64B5F6),
-                      Color(0xFFE3F2FD),
-                    ],
-                  ),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(15.0),
-                  ),
-                ),
-                child: SizedBox.expand(
-                  child: FlatButton(
-                    //button registre
-                    child: Text(
-                      "so  sei que  nada  sei ",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w800,
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    // button cadastrar
-                    onPressed: () {},
-                  ),
-                ),
-              ),
+              // Container(
+              //   margin: EdgeInsets.only(top: 20),
+              //   //buttons registre and cancel
+              //   height: 60,
+              // width: 300,
+              //   alignment: Alignment.centerLeft,
+              //   decoration: BoxDecoration(
+              //     gradient: LinearGradient(
+              //       begin: Alignment.topRight,
+              //       end: Alignment.bottomRight,
+              //       stops: [0.5, 10],
+              //       colors: [
+              //         Color(0xFF64B5F6),
+              //         Color(0xFFE3F2FD),
+              //       ],
+              //     ),
+              //     borderRadius: BorderRadius.all(
+              //       Radius.circular(15.0),
+              //     ),
+              //   ),
+              // child: SizedBox.expand(
+              //   child: FlatButton(
+              //     //button registre
+              //     child: Text(
+              //       "so  sei que  nada  sei ",
+              //       style: TextStyle(
+              //         fontWeight: FontWeight.w800,
+              //         color: Colors.white,
+              //         fontSize: 20,
+              //       ),
+              //       textAlign: TextAlign.center,
+              //     ),
+              //     // button cadastrar
+              //     onPressed: () {},
+              //   ),
+              // ),
+              // ),
             ],
           ),
         ],
@@ -197,8 +197,8 @@ class menuState extends State<menu> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.shopping_basket),
-              title: Text("Cesta de adoção"),
+              leading: Icon(Icons.favorite),
+              title: Text("Adotados / Em espera"),
               onTap: () {
                 Navigator.pop(context);
                 //navegar para outra pagina

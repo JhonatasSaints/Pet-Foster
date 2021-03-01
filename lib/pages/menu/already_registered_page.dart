@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// void main() => runApp(MyApp());
+
 class pagina3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -10,14 +12,10 @@ class pagina3 extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: Text("Cadastro de Pets"),
+        title: Text("Cadastro do Pets"),
       ),
       body: Column(
         children: <Widget>[
-          Title(
-            color: Colors.blue[300],
-            child: Text("nome"),
-          ),
           TextField(
             controller: _controladorNome,
           ),
@@ -29,22 +27,22 @@ class pagina3 extends StatelessWidget {
           ),
           RaisedButton(
             child: Text('Cadastrar'),
-            color: Colors.blue,
+            color: Colors.blueAccent,
             onPressed: () {
               print("O botão foi pressionado");
             },
           ),
           RaisedButton(
             child: Text('Descartar'),
-            color: Colors.orange,
+            color: Colors.blueAccent[20],
             onPressed: () {
               print("O botão foi pressionado");
             },
-          )
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add_a_photo),
+          child: Icon(Icons.arrow_back),
           onPressed: () {
             print("O botão foi pressionado");
           }),
@@ -52,34 +50,9 @@ class pagina3 extends StatelessWidget {
         child: Row(
           children: <Widget>[
             Text("Cadastro  "),
-            IconButton(
-                icon: Icon(Icons.delete),
-                onPressed: () {
-                  print("O IconButton foi pressionado");
-                }),
-            IconButton(
-                icon: Icon(Icons.add_alert),
-                onPressed: () {
-                  print("O IconButton foi pressionado");
-                }),
-            IconButton(
-                icon: Icon(Icons.ac_unit),
-                onPressed: () {
-                  print("O IconButton foi pressionado");
-                }),
-            IconButton(
-                icon: Icon(Icons.favorite),
-                onPressed: () {
-                  print("O IconButton foi pressionado");
-                }),
-            IconButton(
-                icon: Icon(Icons.data_usage_outlined),
-                onPressed: () {
-                  print("O IconButton foi pressionado");
-                }),
           ],
         ),
-        color: Colors.orangeAccent,
+        color: Colors.blueAccent,
       ),
     ));
   }

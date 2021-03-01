@@ -1,8 +1,7 @@
 import 'package:pet_foster/pages/reset_password_page.dart';
 import 'package:pet_foster/pages/signup_page.dart';
-// import 'package:pet_foster/pages/home_page.dart';
-import 'package:pet_foster/pages/menu/menu.dart';
-import 'package:pet_foster/pages/inicio_screen.dart';
+import 'package:pet_foster/pages/menu/menu_page.dart';
+import 'package:pet_foster/pages/home_screen_page.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +10,7 @@ class Login_Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tela inicial'),
+        title: Text(' Home'),
         backgroundColor: Colors.white,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
@@ -39,26 +38,31 @@ class Login_Page extends StatelessWidget {
               height: 128,
               child: Image.asset("assets/pet-house.png"),
             ),
+            SizedBox(
+              height: 10,
+            ),
             Container(
-              alignment: Alignment.center, // colocar imagem no lugar
+              alignment: Alignment.center, // texto
               child: Text(
-                'Pet Foster',
+                'PET FOSTER',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.blue,
                   shadows: [
                     Shadow(
-                      color: Colors.black,
+                      color: Colors.black38,
                       offset: Offset(3, 3),
                       blurRadius: 4,
                     ), //deixar com sombras
                   ],
+                  letterSpacing: 10, //espacamento de letras
+                  // wordSpacing: 10, // espacamento longo entre frases
                 ),
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 30,
             ),
             TextFormField(
               //autofocus: true,
@@ -137,7 +141,7 @@ class Login_Page extends StatelessWidget {
                       Container(
                         child: SizedBox(
                           child: Image.asset("assets/pawblue.png"),
-                          height: 60,
+                          height: 50,
                           width: 50,
                         ),
                       ),
@@ -197,10 +201,10 @@ class Login_Page extends StatelessWidget {
             // ),
             // recover password | espacamneto e etxto recuperar senha
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             Container(
-              height: 30,
+              height: 40,
               child: FlatButton(
                 child: Text(
                   "Esqueceu a senha?",
@@ -231,7 +235,7 @@ class Login_Page extends StatelessWidget {
                       builder: (context) => Signup_Page(),
                     ),
                   );
-                }, //anonymous function
+                },
               ),
             ),
           ],
