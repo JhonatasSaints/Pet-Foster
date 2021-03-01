@@ -12,19 +12,87 @@ class pagina3 extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: Text("Cadastro do Pets"),
+        title: Text("Cadastro de Pets"),
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          color: Colors.blue,
+          onPressed: () => Navigator.pop(context, false),
+        ),
       ),
       body: Column(
         children: <Widget>[
-          TextField(
-            controller: _controladorNome,
+          SizedBox(
+            height: 20,
           ),
-          TextField(
-            controller: _controladorIdade,
+          TextFormField(
+            // autofocus: true,
+            keyboardType: TextInputType.text,
+            obscureText: true,
+            decoration: InputDecoration(
+              labelText: "nome", //Password
+              labelStyle: TextStyle(
+                color: Colors.black38,
+                fontWeight: FontWeight.w400,
+                fontSize: 20,
+              ),
+              border: new OutlineInputBorder(
+                borderRadius: new BorderRadius.circular(15.0),
+                borderSide: new BorderSide(color: Colors.blueGrey),
+              ),
+            ),
+            style: TextStyle(fontSize: 20),
           ),
-          TextField(
-            controller: _controladorSexo,
+          SizedBox(
+            height: 20,
           ),
+          TextFormField(
+            // autofocus: true,
+            keyboardType: TextInputType.text,
+            obscureText: true,
+            decoration: InputDecoration(
+              labelText: "Idade", //Password
+              labelStyle: TextStyle(
+                color: Colors.black38,
+                fontWeight: FontWeight.w400,
+                fontSize: 20,
+              ),
+              border: new OutlineInputBorder(
+                borderRadius: new BorderRadius.circular(15.0),
+                borderSide: new BorderSide(color: Colors.blueGrey),
+              ),
+            ),
+            style: TextStyle(fontSize: 20),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          TextFormField(
+            // autofocus: true,
+            keyboardType: TextInputType.text,
+            obscureText: true,
+            decoration: InputDecoration(
+              labelText: "Cão/Gato", //Password
+              labelStyle: TextStyle(
+                color: Colors.black38,
+                fontWeight: FontWeight.w400,
+                fontSize: 20,
+              ),
+              border: new OutlineInputBorder(
+                borderRadius: new BorderRadius.circular(15.0),
+                borderSide: new BorderSide(color: Colors.blueGrey),
+              ),
+            ),
+            style: TextStyle(fontSize: 20),
+          ),
+          // controller: _controladorNome,
+          // ),
+          // TextField(
+          //   controller: _controladorIdade,
+          // ),
+          // TextField(
+          //   controller: _controladorSexo,
+          // ),
           RaisedButton(
             child: Text('Cadastrar'),
             color: Colors.blueAccent,
@@ -42,10 +110,11 @@ class pagina3 extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.arrow_back),
-          onPressed: () {
-            print("O botão foi pressionado");
-          }),
+        child: Icon(Icons.arrow_back),
+        onPressed: () {
+          print("O botão foi pressionado");
+        },
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: <Widget>[

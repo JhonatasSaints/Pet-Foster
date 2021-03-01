@@ -134,6 +134,25 @@ class menuState extends State<menu> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 25,
+              ),
+              Container(
+                height: 40,
+                alignment: Alignment.center,
+                child: FlatButton(
+                  child: Text(
+                    "Sair",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  onPressed: () => Navigator.pop(context, false),
+                ),
+              ),
               // Container(
               //   margin: EdgeInsets.only(top: 20),
               //   //buttons registre and cancel

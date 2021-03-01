@@ -19,7 +19,9 @@ class Login_Page extends StatelessWidget {
             //Navegar da tela login p/
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => TelaInicial()),
+              MaterialPageRoute(
+                builder: (context) => TelaInicial(),
+              ),
             );
           },
         ),
@@ -81,7 +83,6 @@ class Login_Page extends StatelessWidget {
               ),
               style: TextStyle(fontSize: 20),
             ),
-
             SizedBox(
               height: 10,
             ),
