@@ -1,6 +1,7 @@
 import 'package:pet_foster/pages/reset_password_page.dart';
 import 'package:pet_foster/pages/signup_page.dart';
 // import 'package:pet_foster/pages/home_page.dart';
+import 'package:pet_foster/pages/menu/menu.dart';
 import 'package:pet_foster/pages/inicio_screen.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -46,9 +47,13 @@ class Login_Page extends StatelessWidget {
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.blue,
-                  // shadows: [
-                  //   shadow(color: Colors.blue, offset: Offset(2, 2)), //deixar com sombras
-                  // ],
+                  shadows: [
+                    Shadow(
+                      color: Colors.black,
+                      offset: Offset(3, 3),
+                      blurRadius: 4,
+                    ), //deixar com sombras
+                  ],
                 ),
               ),
             ),
@@ -140,11 +145,12 @@ class Login_Page extends StatelessWidget {
                   ),
                   //definir pagina
                   onPressed: () => {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => (),
-                    //   ),
-                    // ),
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => menu(),
+                      ),
+                    ),
                   },
                 ),
               ),

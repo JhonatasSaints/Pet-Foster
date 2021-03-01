@@ -1,10 +1,7 @@
 // import 'package:firebase_core/firebase_core.dart';
-// import 'package:pet_foster/inicio_screen.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
-
-import 'package:pet_foster/pages/login_page.dart';
-import 'package:pet_foster/pages/reset_password_page.dart';
 import 'package:flutter/material.dart';
+import 'package:pet_foster/pages/inicio_screen.dart';
 
 void main() => runApp(MyApp());
 // Future<void> main() async {
@@ -23,7 +20,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.lightBlue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Login_Page(), //Login _Page/TelaInicial
+
+      //inicio_screen /TelaInicial
+      home: TelaInicial(),
     );
   }
 }

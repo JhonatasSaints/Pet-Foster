@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  google_fonts: ^0.2.0
   flutter:
     sdk: flutter
   firebase_core: "0.7.0"
@@ -46,9 +47,19 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/PetFoster-logo.png
+    - assets/fb.png
+    - assets/paw.png
+    - assets/pawblue.png
+    - assets/pawprints.png
+    - assets/Add-User.png
+    - assets/key.png
+    - assets/pet-house.png
+    - assets/pet-pana.png
+    - assets/pet-amigo.png
+    - assets/Animal.png
+    - assets/download.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -75,16 +86,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-
-  assets:
-    - assets/PetFoster-logo.png
-    - assets/fb.png
-    - assets/paw.png
-    - assets/pawblue.png
-    - assets/pawprints.png
-    - assets/add-user.png
-    - assets/key.png
-    - assets/pet-house.png
-    - assets/pet-pana.png
-    - assets/pet-amigo.png
-    - assets/Animal.png

@@ -33,7 +33,7 @@ class Signup_Page extends StatelessWidget {
               alignment: Alignment(0.0, 1.15),
               decoration: new BoxDecoration(
                 image: new DecorationImage(
-                  image: AssetImage("assets/add-user.png"), // add-user image
+                  image: AssetImage("assets/Add-User.png"), // add-user image
                   fit: BoxFit.fitHeight,
                 ),
               ),
