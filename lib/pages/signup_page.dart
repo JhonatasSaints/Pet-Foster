@@ -118,6 +118,7 @@ class Signup_Page extends StatelessWidget {
             ),
             TextFormField(
               keyboardType: TextInputType.text,
+              obscureText: true,
               decoration: InputDecoration(
                 labelText: "Senha", //passord user
                 labelStyle: TextStyle(
