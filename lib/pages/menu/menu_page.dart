@@ -194,43 +194,94 @@ class menuState extends State<menu> {
           ),
         ],
       ),
-      drawer: Container(
-        color: Colors.blue[100],
+      drawer: new Drawer(
+        // color: Colors.blue[100],
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
             UserAccountsDrawerHeader(
               accountEmail: Text("araujo@gmail.com"),
               accountName: Text("tiago"),
+              /*decoration: new BoxDecoration(
+                image: new DecorationImage(
+                  image: new ExactAssetImage('assets/imagens.jpg'),
+                  fit: BoxFit.cover,
+                ),
+              ),*/
               currentAccountPicture: CircleAvatar(
-                child: Text("TR"),
-                backgroundColor: Colors.white,
+                backgroundImage: NetworkImage(
+                    "https://randomuser.me/api/portraits/men/46.jpg"),
               ),
             ),
             ListTile(
-              leading: Icon(Icons.person),
-              title: Text("minha conta"),
+              leading: Icon(
+                Icons.person,
+                color: Colors.green,
+              ),
+              title: Text("Minha conta"),
               onTap: () {
                 Navigator.pop(context);
                 //navegar para  outra pagina
               },
             ),
             ListTile(
-              leading: Icon(Icons.favorite),
-              title: Text("Adotados / Em espera"),
+              leading: Icon(
+                Icons.shopping_basket,
+                color: Colors.green,
+              ),
+              title: Text("Adoções"),
               onTap: () {
                 Navigator.pop(context);
                 //navegar para outra pagina
               },
             ),
             ListTile(
-              leading: Icon(Icons.exit_to_app_outlined),
+              leading: Icon(
+                Icons.history,
+                color: Colors.green,
+              ),
+              title: Text("Historico"),
+              onTap: () {
+                Navigator.pop(context);
+                //navegar para outra pagina
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.help_outline,
+                color: Colors.green,
+              ),
+              title: Text("Ajuda"),
+              onTap: () {
+                Navigator.pop(context);
+                //navegar para outra pagina
+              },
+            ),
+            Divider(
+              color: Colors.black,
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.settings,
+                color: Colors.green,
+              ),
+              title: Text("Configuração"),
+              onTap: () {
+                Navigator.pop(context);
+                //navegar para outra pagina
+              },
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.exit_to_app_outlined,
+                color: Colors.green,
+              ),
               title: Text("Sair"),
               onTap: () {
                 Navigator.pop(context);
                 //navegar para outra pagina
               },
-            )
+            ),
           ],
         ),
       ),
